@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application>
+  <component name="StatisticsApplicationUsages">
+    <group name="jdbc-driver">
+      <project id="bscah-homebase" values="com.mysql.jdbc.Driver" />
+      <project id="rmh-homebasecivi" values="com.mysql.jdbc.Driver" />
+    </group>
+    <group name="php-include-path">
+      <project id="bscah-homebase" values="1" />
+      <project id="rmh-homebasecivi" values="0" />
+    </group>
+    <group name="php-interpreters">
+      <project id="bscah-homebase" values="2" />
+      <project id="rmh-homebasecivi" values="2" />
+    </group>
+    <group name="php-servers">
+      <project id="bscah-homebase" values="0" />
+      <project id="rmh-homebasecivi" values="0" />
+    </group>
+    <group name="php-debug-skipped-paths">
+      <project id="bscah-homebase" values="0" />
+      <project id="rmh-homebasecivi" values="0" />
+    </group>
+    <group name="file-type">
+      <project id="bscah-homebase" values="PLAIN_TEXT,JavaScript,SQL,DATASOURCE_STORAGE,PHP,XML,UNKNOWN,CSS,Images" />
+      <project id="rmh-homebasecivi" values="UNKNOWN,JavaScript,SQL,PHP,PLAIN_TEXT,XML,DATASOURCE_STORAGE,Images,CSS" />
+    </group>
+    <group name="JavaScript versions">
+      <project id="bscah-homebase" values="DEFAULT" />
+      <project id="rmh-homebasecivi" values="DEFAULT" />
+    </group>
+    <group name="svn working copy format">
+      <project id="bscah-homebase" values="1.8" />
+    </group>
+    <group name="vcs">
+      <project id="bscah-homebase" values="svn" />
+      <project id="rmh-homebasecivi" values="hg4idea" />
+    </group>
+    <group name="jdbc-datasource">
+      <project id="bscah-homebase" values="MySQL/5.6.16" />
+      <project id="rmh-homebasecivi" values="MySQL/5.6.16" />
+    </group>
+    <group name="run-configuration-type-temp">
+      <project id="bscah-homebase" values="PHPUnitRunConfigurationType,JavascriptDebugType" />
+    </group>
+    <group name="deployment server">
+      <project id="bscah-homebase" values="LOCAL" />
+      <project id="rmh-homebasecivi" values="LOCAL" />
+    </group>
+    <group name="php-interpreter-version">
+      <project id="bscah-homebase" values="5.5.11" />
+      <project id="rmh-homebasecivi" values="5.5.11" />
+    </group>
+    <group name="javaScript Scope Usages">
+      <project id="bscah-homebase" values="Project,Project" />
+      <project id="rmh-homebasecivi" values="Project,Project" />
+    </group>
+    <group name="module type">
+      <project id="bscah-homebase" values="WEB_MODULE" />
+      <project id="rmh-homebasecivi" values="WEB_MODULE" />
+    </group>
+    <group name="php-interpreter-debug-ext">
+      <project id="bscah-homebase" values="xdebug" />
+      <project id="rmh-homebasecivi" values="xdebug" />
+    </group>
+  </component>
+  <component name="UsageTrigger">
+    <counts>
+      <entry feature="NewDirectoryProjectAction.empty" count="1" />
+      <entry feature="execute.JavascriptDebugType.Run" count="12" />
+      <entry feature="execute.PHPUnitRunConfigurationType.Run" count="13" />
+      <entry feature="ide.settings.Appearance" count="2" />
+      <entry feature="ide.settings.Composer" count="1" />
+      <entry feature="ide.settings.Deployment" count="9" />
+      <entry feature="ide.settings.HTML" count="1" />
+      <entry feature="ide.settings.PHP" count="3" />
+      <entry feature="ide.settings.SQL_Dialects" count="1" />
+      <entry feature="ideaapp.started" count="19" />
+      <entry feature="tips.of.the.day.next" count="10" />
+    </counts>
+  </component>
+</application>
+

@@ -1,0 +1,41 @@
+##############################################
+#  Settings
+##############################################
+background yes
+use_xft yes
+xftfont silkscreen:size=12
+xftalpha 1
+text_buffer_size 50000
+update_interval 0.50
+total_run_times 0
+own_window yes
+own_window_transparent yes
+own_window_type desktop
+own_window_colour 262729
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+double_buffer yes
+draw_shades yes
+draw_outline no
+draw_borders no
+draw_graph_borders yes
+default_color 789922
+default_shade_color black
+default_outline_color white
+gap_x 4
+gap_y 4
+no_buffers yes
+uppercase no
+cpu_avg_samples 10
+override_utf8_locale no
+temperature_unit celsius
+#alignment top_center
+alignment bl ## top_center
+minimum_size 1366 1
+short_units yes
+pad_percents 2
+top_name_width 2
+##############################################
+#  Output #
+##############################################
+TEXT
+${color f92672}Manjaro GNU/Linux ${color} | ${color beed5f}Machine:${color d3d3d3} $nodename | ${color fd971f} Uptime:${color d3d3d3} $uptime ${color}| ${color ff669d}Kernel: ${color d3d3d3} $kernel | ${color 9e6ffe}Cpu: ${color e3e3e3}${cpu cpu0}% @ ${color e3e3e3}$acpitemp C | ${color 00CBEE}Ram: ${color d3d3d3}${mem}/${memmax} | ${color}Home: ${color e1e1e1}${font}${fs_used /home}/${fs_size /home}

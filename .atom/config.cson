@@ -1,0 +1,15 @@
+'editor':
+  'fontSize': 13
+  'tabLength': 4
+  'fontFamily': 'Droid Sans Mono'
+'core':
+  'themes': [
+    'atom-dark-ui'
+    'monokai'
+  ]
+'exception-reporting':
+  'userId': '50737924-06a1-ab2d-d8e5-218102eb8d1a'
+'welcome':
+  'showOnStartup': false
+'metrics':
+  'userId': 'f7cf0b37-372f-5457-44c0-cb0c07f5f9ec'

@@ -1,0 +1,13 @@
+<jetbrains.communicator.jabber.impl.JabberSettings>
+  <myAccount>
+    <myUsername>mstavola9</myUsername>
+    <myPort>5222</myPort>
+    <myServer>talk.google.com</myServer>
+    <myPassword>&amp;#27;&amp;#17;&amp;#7;&amp;#6;&amp;#30;&amp;#8;&amp;#8;&amp;#11;O&amp;#27;&amp;#17;&amp;#30;&amp;#21;&amp;#4;&amp;#27;&amp;#5;</myPassword>
+    <myForceSSL>false</myForceSSL>
+    <myRememberPassword>true</myRememberPassword>
+    <myShouldLogin>false</myShouldLogin>
+  </myAccount>
+  <mySkipJabberConnection>false</mySkipJabberConnection>
+  <myWasOnceConnectedSuccessfully>false</myWasOnceConnectedSuccessfully>
+</jetbrains.communicator.jabber.impl.JabberSettings>

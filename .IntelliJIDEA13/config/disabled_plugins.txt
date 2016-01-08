@@ -1,7 +1,0 @@
-TFS
-CVS
-ClearcasePlugin
-hg4idea
-Subversion
-SourceSafe
-PerforceDirectPlugin

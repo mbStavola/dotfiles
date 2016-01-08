@@ -1,0 +1,56 @@
+<application>
+  <component name="DimensionService">
+    <location key="FileChooserDialogImpl.0.0.1920.1080" x="743" y="249" />
+    <location key="GitCloneDialog.0.0.1920.1080" x="766" y="418" />
+    <location key="NewModule_or_Project.wizard.0.0.1920.1080" x="783" y="368" />
+    <location key="WELCOME_SCREEN.0.0.1920.1080" x="960" y="305" />
+    <location key="com.intellij.ide.util.TipDialog.0.0.1920.1080" x="671" y="374" />
+    <location key="ProcessPopupWindow.0.0.1920.1080" x="1304" y="854" />
+    <location key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate.0.0.1920.1080" x="693" y="439" />
+    <location key="AndroidExtendedDeviceChooserDialog.0.0.1920.1080" x="668" y="338" />
+    <location key="#Project_Structure.0.0.1920.1080" x="545" y="205" />
+    <location key="#client.0.0.1920.1080" x="958" y="147" />
+    <location key="#com.intellij.execution.impl.EditConfigurationsDialog.0.0.1920.1080" x="469" y="195" />
+    <location key="#responder-release.0.0.1920.1080" x="737" y="212" />
+    <location key="#responder.0.0.1920.1080" x="737" y="212" />
+    <location key="IdeErrosDialog.0.0.1920.1080" x="519" y="371" />
+    <location key="#Browse_Repositories.0.0.1920.1080" x="539" y="209" />
+    <location key="MultipleFileMergeDialog.0.0.1920.1080" x="654" y="287" />
+    <location key="SettingsEditor.0.0.1920.1080" x="444" y="212" />
+    <size key="FileChooserDialogImpl.0.0.1920.1080" width="448" height="509" />
+    <size key="GitCloneDialog.0.0.1920.1080" width="381" height="175" />
+    <size key="NewModule_or_Project.wizard.0.0.1920.1080" width="347" height="275" />
+    <size key="ProcessPopupWindow.0.0.1920.1080" width="201" height="178" />
+    <size key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate.0.0.1920.1080" width="533" height="237" />
+    <size key="AndroidExtendedDeviceChooserDialog.0.0.1920.1080" width="576" height="433" />
+    <size key="GridCell.Tab.0.left.0.0.1920.1080" width="1878" height="250" />
+    <size key="GridCell.Tab.0.center.0.0.1920.1080" width="1878" height="250" />
+    <size key="GridCell.Tab.0.right.0.0.1920.1080" width="1878" height="250" />
+    <size key="GridCell.Tab.0.bottom.0.0.1920.1080" width="1878" height="250" />
+    <size key="#Project_Structure.0.0.1920.1080" width="822" height="696" />
+    <size key="#client.0.0.1920.1080" width="446" height="689" />
+    <size key="GridCell.Tab.1.left.0.0.1920.1080" width="1878" height="250" />
+    <size key="GridCell.Tab.1.center.0.0.1920.1080" width="1878" height="250" />
+    <size key="GridCell.Tab.1.right.0.0.1920.1080" width="1878" height="250" />
+    <size key="GridCell.Tab.1.bottom.0.0.1920.1080" width="1878" height="250" />
+    <size key="GridCell.Tab.2.left.0.0.1920.1080" width="1878" height="250" />
+    <size key="GridCell.Tab.2.center.0.0.1920.1080" width="1878" height="250" />
+    <size key="GridCell.Tab.2.right.0.0.1920.1080" width="1878" height="250" />
+    <size key="GridCell.Tab.2.bottom.0.0.1920.1080" width="1878" height="250" />
+    <size key="GridCell.Tab.3.left.0.0.1920.1080" width="1878" height="250" />
+    <size key="GridCell.Tab.3.center.0.0.1920.1080" width="1878" height="250" />
+    <size key="GridCell.Tab.3.right.0.0.1920.1080" width="1878" height="250" />
+    <size key="GridCell.Tab.3.bottom.0.0.1920.1080" width="1878" height="250" />
+    <size key="GridCell.Tab.4.left.0.0.1920.1080" width="1878" height="250" />
+    <size key="GridCell.Tab.4.center.0.0.1920.1080" width="1878" height="250" />
+    <size key="GridCell.Tab.4.right.0.0.1920.1080" width="1878" height="250" />
+    <size key="GridCell.Tab.4.bottom.0.0.1920.1080" width="1878" height="250" />
+    <size key="#responder-release.0.0.1920.1080" width="438" height="689" />
+    <size key="#responder.0.0.1920.1080" width="446" height="686" />
+    <size key="IdeErrosDialog.0.0.1920.1080" width="874" height="367" />
+    <size key="javadoc.popup.0.0.1920.1080" width="446" height="164" />
+    <size key="#Browse_Repositories.0.0.1920.1080" width="826" height="688" />
+    <size key="MultipleFileMergeDialog.0.0.1920.1080" width="603" height="535" />
+    <size key="SettingsEditor.0.0.1920.1080" width="1024" height="686" />
+  </component>
+</application>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<application>
-  <component name="RemoteServers">
-    <remote-server name="Heroku" type="heroku">
-      <configuration email="mstavola9@gmail.com" password="5E8ZEK!aB" />
-    </remote-server>
-  </component>
-</application>
-

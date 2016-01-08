@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<conversion>
+  <applied-converters>
+    <converter id="android-module-to-java-module" />
+    <converter id="android-proguard-options" />
+    <converter id="android-sdk-library" />
+    <converter id="groovy-modules-to-facets" />
+    <converter id="groovy-script-run-configurations" />
+  </applied-converters>
+  <project-files>
+    <file path="/home/mbs/workspace/android/LifeLine/.idea/compiler.xml" timestamp="1449617192000" />
+    <file path="/home/mbs/workspace/android/LifeLine/.idea/copyright/profiles_settings.xml" timestamp="1449617192000" />
+    <file path="/home/mbs/workspace/android/LifeLine/.idea/gradle.xml" timestamp="1449617347000" />
+    <file path="/home/mbs/workspace/android/LifeLine/.idea/libraries/appcompat_v7_23_1_1.xml" timestamp="1452005411000" />
+    <file path="/home/mbs/workspace/android/LifeLine/.idea/libraries/bottomsheet_core_1_4_3.xml" timestamp="1452005411000" />
+    <file path="/home/mbs/workspace/android/LifeLine/.idea/libraries/butterknife_7_0_1.xml" timestamp="1452005411000" />
+    <file path="/home/mbs/workspace/android/LifeLine/.idea/libraries/cardview_v7_23_1_1.xml" timestamp="1452005411000" />
+    <file path="/home/mbs/workspace/android/LifeLine/.idea/libraries/circleimageview_1_3_0.xml" timestamp="1452005411000" />
+    <file path="/home/mbs/workspace/android/LifeLine/.idea/libraries/dagger_1_2_2.xml" timestamp="1452005411000" />
+    <file path="/home/mbs/workspace/android/LifeLine/.idea/libraries/dagger_compiler_1_2_2.xml" timestamp="1452005411000" />
+    <file path="/home/mbs/workspace/android/LifeLine/.idea/libraries/design_23_1_1.xml" timestamp="1452005411000" />
+    <file path="/home/mbs/workspace/android/LifeLine/.idea/libraries/digits_1_6_1.xml" timestamp="1452005411000" />
+    <file path="/home/mbs/workspace/android/LifeLine/.idea/libraries/fabric_1_3_4.xml" timestamp="1452005411000" />
+    <file path="/home/mbs/workspace/android/LifeLine/.idea/libraries/gson_2_3_1.xml" timestamp="1452005411000" />
+    <file path="/home/mbs/workspace/android/LifeLine/.idea/libraries/guava_15_0.xml" timestamp="1452005411000" />
+    <file path="/home/mbs/workspace/android/LifeLine/.idea/libraries/javawriter_2_5_0.xml" timestamp="1452005411000" />
+    <file path="/home/mbs/workspace/android/LifeLine/.idea/libraries/javax_inject_1.xml" timestamp="1452005411000" />
+    <file path="/home/mbs/workspace/android/LifeLine/.idea/libraries/joda_time_2_8_2.xml" timestamp="1452005411000" />
+    <file path="/home/mbs/workspace/android/LifeLine/.idea/libraries/libphonenumber_7_1_1.xml" timestamp="1452005411000" />
+    <file path="/home/mbs/workspace/android/LifeLine/.idea/libraries/material_1_2_1.xml" timestamp="1452005411000" />
+    <file path="/home/mbs/workspace/android/LifeLine/.idea/libraries/okhttp_2_5_0.xml" timestamp="1452005411000" />
+    <file path="/home/mbs/workspace/android/LifeLine/.idea/libraries/okio_1_6_0.xml" timestamp="1452005411000" />
+    <file path="/home/mbs/workspace/android/LifeLine/.idea/libraries/otto_1_3_8.xml" timestamp="1452005411000" />
+    <file path="/home/mbs/workspace/android/LifeLine/.idea/libraries/percent_23_1_1.xml" timestamp="1452005411000" />
+    <file path="/home/mbs/workspace/android/LifeLine/.idea/libraries/picasso_2_5_2.xml" timestamp="1452005411000" />
+    <file path="/home/mbs/workspace/android/LifeLine/.idea/libraries/recyclerview_v7_23_1_1.xml" timestamp="1452005411000" />
+    <file path="/home/mbs/workspace/android/LifeLine/.idea/libraries/retrofit_1_9_0.xml" timestamp="1452005411000" />
+    <file path="/home/mbs/workspace/android/LifeLine/.idea/libraries/support_annotations_23_1_1.xml" timestamp="1452005411000" />
+    <file path="/home/mbs/workspace/android/LifeLine/.idea/libraries/support_v4_23_1_1.xml" timestamp="1452005411000" />
+    <file path="/home/mbs/workspace/android/LifeLine/.idea/libraries/twitter_core_1_4_0.xml" timestamp="1452005411000" />
+    <file path="/home/mbs/workspace/android/LifeLine/.idea/misc.xml" timestamp="1450115040000" />
+    <file path="/home/mbs/workspace/android/LifeLine/.idea/modules.xml" timestamp="1449617347000" />
+    <file path="/home/mbs/workspace/android/LifeLine/.idea/runConfigurations.xml" timestamp="1449617197000" />
+    <file path="/home/mbs/workspace/android/LifeLine/.idea/vcs.xml" timestamp="1449617197000" />
+    <file path="/home/mbs/workspace/android/LifeLine/.idea/workspace.xml" timestamp="1452269581000" />
+    <file path="/home/mbs/workspace/android/LifeLine/LifeLine.iml" timestamp="1449617347000" />
+    <file path="/home/mbs/workspace/android/LifeLine/client/client.iml" timestamp="1452007806000" />
+    <file path="/home/mbs/workspace/android/LifeLine/responder/responder.iml" timestamp="1452007806000" />
+    <file path="/home/mbs/workspace/android/LifeLine/shared/shared.iml" timestamp="1452007806000" />
+  </project-files>
+</conversion>
+

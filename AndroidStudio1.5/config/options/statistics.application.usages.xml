@@ -1,27 +1,27 @@
 <application>
   <component name="StatisticsApplicationUsages">
     <group name="vcs">
-      <project id="LifeLine" values="Git" collectionTime="1450137597065" />
+      <project id="LifeLine" values="Git" collectionTime="1452285367159" />
     </group>
     <group name="file-type">
-      <project id="LifeLine" values="UNKNOWN,IDEA_MODULE,PLAIN_TEXT,AIDL,XML,Properties,ProGuard File,JAVA,ARCHIVE,Groovy,Images" collectionTime="1450137597100" />
+      <project id="LifeLine" values="AIDL,Properties,ProGuard File,XML,UNKNOWN,PLAIN_TEXT,JAVA,IDEA_MODULE,ARCHIVE,Groovy,Images" collectionTime="1452285367189" />
     </group>
     <group name="run-configuration-type">
-      <project id="LifeLine" values="AndroidRunConfigurationType" collectionTime="1450137597066" />
+      <project id="LifeLine" values="AndroidRunConfigurationType" collectionTime="1452285367160" />
     </group>
     <group name="language-level">
-      <project id="LifeLine" values="JDK_1_7" collectionTime="1450137597107" />
+      <project id="LifeLine" values="JDK_1_7" collectionTime="1452285367199" />
     </group>
     <group name="frameworks">
-      <project id="LifeLine" values="android,android-gradle,java-gradle" collectionTime="1450137597065" />
+      <project id="LifeLine" values="android,java-gradle,android-gradle" collectionTime="1452285367159" />
     </group>
     <group name="module type">
-      <project id="LifeLine" values="JAVA_MODULE" collectionTime="1450137597065" />
+      <project id="LifeLine" values="JAVA_MODULE" collectionTime="1452285367159" />
     </group>
   </component>
   <component name="UsageTrigger">
     <counts>
-      <entry feature="execute.AndroidRunConfigurationType.Run" count="11" />
+      <entry feature="execute.AndroidRunConfigurationType.Run" count="21" />
       <entry feature="ide.help.reference.dialogs.rundebug.AndroidRunConfigurationType" count="1" />
       <entry feature="ide.settings.Project_Structure" count="12" />
       <entry feature="ideaapp.started" count="10" />

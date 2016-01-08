@@ -1,0 +1,14 @@
+[dotfiles]
+repository = /home/mbs/dotfiles
+packages = [
+	'AndroidStudio1.5',
+	'atom',
+	'cargo',
+	'config',
+	'IntelliJIdea15'
+	]
+ignore = [
+	'.git',
+	'.gitignore',
+	'*.swp'
+	]

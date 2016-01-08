@@ -13,7 +13,7 @@
       <project id="restline" values="org.postgresql.Driver" collectionTime="1450133700521" />
     </group>
     <group name="file-type">
-      <project id="restline" values="UNKNOWN,PLAIN_TEXT,JAVA,DATASOURCE_STORAGE,IDEA_MODULE,XML" collectionTime="1450133700515" />
+      <project id="restline" values="UNKNOWN,DATASOURCE_STORAGE,PLAIN_TEXT,JAVA,XML,IDEA_MODULE" collectionTime="1450133700515" />
     </group>
     <group name="module type">
       <project id="restline" values="JAVA_MODULE" collectionTime="1450133700485" />

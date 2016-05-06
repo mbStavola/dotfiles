@@ -38,4 +38,4 @@ top_name_width 2
 #  Output #
 ##############################################
 TEXT
-${color f92672}Manjaro GNU/Linux ${color} | ${color beed5f}Machine:${color d3d3d3} $nodename | ${color fd971f} Uptime:${color d3d3d3} $uptime ${color}| ${color ff669d}Kernel: ${color d3d3d3} $kernel | ${color 9e6ffe}Cpu: ${color e3e3e3}${cpu cpu0}% @ ${color e3e3e3}$acpitemp C | ${color 00CBEE}Ram: ${color d3d3d3}${mem}/${memmax} | ${color}Home: ${color e1e1e1}${font}${fs_used /home}/${fs_size /home}
+${color f92672}Antergos GNU/Linux ${color} | ${color beed5f}Machine:${color d3d3d3} $nodename | ${color fd971f} Uptime:${color d3d3d3} $uptime ${color}| ${color ff669d}Kernel: ${color d3d3d3} $kernel | ${color 9e6ffe}Cpu: ${color e3e3e3}${cpu cpu0}% @ ${color e3e3e3}$acpitemp C | ${color 00CBEE}Ram: ${color d3d3d3}${mem}/${memmax} | ${color}Home: ${color e1e1e1}${font}${fs_used /home}/${fs_size /home}

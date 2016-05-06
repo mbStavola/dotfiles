@@ -3,134 +3,122 @@
 # For information on manually configuring tint2 see http://code.google.com/p/tint2/wiki/Configure
 
 # Background definitions
-# ID 1
+# ID 1 >> Panel
 rounded = 0
 border_width = 0
-background_color = #FFFFFF 3
-border_color = #828282 0
+background_color = #080808 100
+border_color = #3d5454 100
 
-# ID 2
-rounded = 2
-border_width = 1
-background_color = #D8D8D8 20
-border_color = #FFE200 88
+# ID 2 >> Active task
+rounded = 0
+border_width = 2
+background_color = #000000 100
+border_color = #FFFFFF 0
 
-# ID 3
-rounded = 2
-border_width = 1
-background_color = #D8D8D8 13
-border_color = #FFFFFF 88
-
-# ID 4
-rounded = 1
-border_width = 1
-background_color = #888888 20
-border_color = #2388ED 60
-
-# ID 5
+# ID 3 >> Clock
 rounded = 0
 border_width = 1
-background_color = #000000 28
-border_color = #FF0000 60
+background_color = #121212 100
+border_color = #FFFFFF 0
 
-# ID 6
+# ID 4 >> Tooltip
 rounded = 0
 border_width = 1
-background_color = #000000 28
-border_color = #FF0000 60
-
-# ID 7
-rounded = 3
-border_width = 0
-background_color = #222222 88
-border_color = #222222 88
-
-# ID 8
-rounded = 1
-border_width = 1
-background_color = #888888 20
-border_color = #FFFFFF 60
+background_color = #000000 100
+border_color = #286f8a 100
 
 # Panel
 panel_monitor = all
 panel_position = top center horizontal
-panel_size = 100% 30
-panel_margin = 0 5
-panel_padding = 4 1 0
+panel_size = 100% 20
+panel_margin = 0 0
+panel_padding = 0 0 0
 panel_dock = 0
-wm_menu = 1
-panel_layer = top
+wm_menu = 0
+panel_layer = bottom
 panel_background_id = 1
 
 # Panel Autohide
 autohide = 0
 autohide_show_timeout = 0.3
-autohide_hide_timeout = 1.5
-autohide_height = 6
+autohide_hide_timeout = 2
+autohide_height = 2
 strut_policy = follow_size
 
 # Taskbar
 taskbar_mode = single_desktop
-taskbar_padding = 6 3 6
-taskbar_background_id = 5
-taskbar_active_background_id = 6
+taskbar_padding = 0 0 1
+taskbar_background_id = 0
+taskbar_active_background_id = 0
 
 # Tasks
-urgent_nb_of_blink = 20
-task_icon = 1
+urgent_nb_of_blink = 8
+task_icon = 0
 task_text = 1
 task_centered = 1
-task_maximum_size = 185 40
-task_padding = 2 2
-task_background_id = 3
+task_maximum_size = 230 35
+task_padding = 1 1
+task_background_id = 0
 task_active_background_id = 2
-task_urgent_background_id = 4
-task_iconified_background_id = 3
+task_urgent_background_id = 3
+task_iconified_background_id = 0
 
 # Task Icons
-task_icon_asb = 80 0 0
+task_icon_asb = 70 0 0
 task_active_icon_asb = 100 0 0
 task_urgent_icon_asb = 100 0 0
-task_iconified_icon_asb = 80 0 0
+task_iconified_icon_asb = 70 0 0
 
 # Fonts
-task_font = Liberation Sans 06_55 8
-task_font_color = #FFFFFF 83
-task_active_font_color = #FFFFFF 100
-task_urgent_font_color = #FFE200 100
-task_iconified_font_color = #FFFFFF 60
+task_font = cure 10
+task_font_color = #719f9f 100
+task_active_font_color = #ff6565 100
+task_urgent_font_color = #FFFFFF 100
+task_iconified_font_color = #606060 100
 font_shadow = 0
 
 # System Tray
 systray = 1
-systray_padding = 4 2 3
+systray_padding = 4 0 5
 systray_sort = ascending
-systray_background_id = 5
-systray_icon_size = 24
+systray_background_id = 0
+systray_icon_size = 15
 systray_icon_asb = 100 0 0
 
 # Clock
-time1_format = %a %b %d, %Y - %I:%M:%S
-time1_font = Liberation Sans 11
-clock_font_color = #FFFFFF 100
-clock_padding = 12 4
-clock_background_id = 5
-clock_lclick_command = gsimplecal
-clock_rclick_command = gsimplecal
+time1_format = %r
+time1_font = Envy Code R 12
+#time2_format = %A %d %B
+#time2_font = sans 6
+clock_font_color = #ffffff 100
+clock_padding = 6 1
+clock_background_id = 3
+clock_rclick_command = 
 
 # Tooltips
 tooltip = 1
-tooltip_padding = 2 2
-tooltip_show_timeout = 0.0
-tooltip_hide_timeout = 0.0
-tooltip_background_id = 7
-tooltip_font = Liberation Sans normal 9.0
-tooltip_font_color = #D8D8D8 100
+tooltip_padding = 5 3
+tooltip_show_timeout = 0.7
+tooltip_hide_timeout = 0.3
+tooltip_background_id = 4
+tooltip_font = Terminus 8
+tooltip_font_color = #286f8a 100
 
 # Mouse
 mouse_middle = none
-mouse_right = toggle
+mouse_right = close
 mouse_scroll_up = toggle
 mouse_scroll_down = iconify
+
+# Battery
+battery = 0
+battery_low_status = 10
+battery_low_cmd = notify-send "battery low"
+battery_hide = 100
+bat1_font = sans 8
+bat2_font = sans 6
+battery_font_color = #FFFFFF 74
+battery_padding = 1 0
+battery_background_id = 0
 
 # End of config

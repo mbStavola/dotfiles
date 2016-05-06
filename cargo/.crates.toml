@@ -1,4 +1,0 @@
-
-[v1]
-"cargo-check 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)" = ["cargo-check"]
-"racer 1.1.0 (git+https://github.com/phildawes/racer.git#c94a17f844c13d2f115a53013c0f9e063bc31f23)" = ["racer"]

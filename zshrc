@@ -74,7 +74,7 @@ export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/core_perl:/opt/and
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
 else
-  export EDITOR='subl3'
+  export EDITOR='nvim'
 fi
 
 # Compilation flags

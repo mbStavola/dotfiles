@@ -1,0 +1,9 @@
+default_host_triple = "x86_64-unknown-linux-gnu"
+default_toolchain = "stable-x86_64-unknown-linux-gnu"
+telemetry = false
+version = "12"
+
+[overrides]
+"/home/mbs/workspace/rust/bummer" = "nightly-x86_64-unknown-linux-gnu"
+"/home/mbs/workspace/rust/matroska" = "nightly-x86_64-unknown-linux-gnu"
+"/home/mbs/workspace/rust/xi-editor" = "1.29.2-x86_64-unknown-linux-gnu"

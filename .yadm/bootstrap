@@ -23,6 +23,7 @@ cargo install cargo-edit cargo-fix
 # Install some standard packages
 read -r -d '' PACKAGES <<-'EOF'
 # CLI tools
+zsh
 ncdu
 sd 
 exa 
@@ -55,3 +56,4 @@ EOF
 PACKAGES=$(sed -e 's/#.*$//' -e '/^$/d' <<< $PACKAGES | sed ':a;N;$!ba;s/\n/ /g')
 
 yay -S $PACKAGES --noconfirm 
+chsh -s $(which zsh)

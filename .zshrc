@@ -29,6 +29,11 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
+# Ctrl+R fuzzy finder
+source "/usr/share/fzf/completion.zsh"
+source "/usr/share/fzf/key-bindings.zsh"
+
+# Alias unix utils to alternatives
 alias mv="mv -i"
 alias ls="exa -lah --git"
 alias cloc="tokei"
@@ -36,6 +41,9 @@ alias find="fd"
 alias sed="sd"
 alias vim="nvim"
 alias cat="bat"
+alias grep="rg"
+
+# Convenience commands
 alias reload_env="zsh"
 alias memcache_clear="echo 'flush_all' | nc localhost 11211"
 function kill_port() {
@@ -55,16 +63,3 @@ if [[ -n $SSH_CONNECTION ]]; then
 else
 	export EDITOR='nvim'
 fi
-
-export PATH=$PATH:/opt/android-sdk/platform-tools
-export PATH=$PATH:/opt/android-sdk/tools
-
-export ANDROID_HOME=/root/Android/Sdk
-export NDK_HOME=$ANDROID_HOME/ndk-bundle
-export GOPATH=/home/mbs/workspace/go
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-# tabtab source for electron-forge package
-# uninstall by removing these lines or running `tabtab uninstall electron-forge`
-[[ -f /home/mbs/workspace/js/xi-electron/node_modules/tabtab/.completions/electron-forge.zsh ]] && . /home/mbs/workspace/js/xi-electron/node_modules/tabtab/.completions/electron-forge.zsh

@@ -35,6 +35,7 @@ alias cloc="tokei"
 alias find="fd"
 alias sed="sd"
 alias vim="nvim"
+alias cat="bat"
 alias reload_env="zsh"
 alias memcache_clear="echo 'flush_all' | nc localhost 11211"
 function kill_port() {

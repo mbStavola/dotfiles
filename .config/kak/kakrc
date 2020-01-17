@@ -1,0 +1,42 @@
+# Plugins
+source "%val{config}/plugins/plug.kak/rc/plug.kak"
+plug "andreyorst/plug.kak" noload config %{
+   set-option global plug_always_ensure true
+}
+
+plug "alexherbo2/kakoune-dracula-theme" theme
+
+plug "alexherbo2/connect.kak" config %{
+    require-module connect-fzf
+}
+plug "alexherbo2/explore.kak" config %{
+    alias global explore-files fzf-files
+    alias global explore-buffers fzf-buffers
+}
+
+plug "occivink/kakoune-sudo-write"
+
+plug "ul/kak-lsp" do %{
+    cargo install --locked --force --path .
+} config %{
+    set global lsp_cmd "kak-lsp -s %val{session} -vvv --log /tmp/kak-lsp.log"
+
+    hook global WinSetOption filetype=(rust|go) %{
+        lsp-enable-window
+    }
+
+    hook global WinSetOption filetype=rust %{
+        set buffer formatcmd 'rustfmt'
+
+        set buffer auto_pairs ( ) { } [ ] \" \" ` `
+
+        lsp-auto-signature-help-enable
+    }
+}
+
+# Config
+
+## Style
+colorscheme dracula
+
+add-highlighter global/ number-lines

@@ -1,0 +1,16 @@
+snippet_support = true
+verbosity = 2
+
+[server]
+timeout = 0
+
+[language.rust]
+filetypes = ["rust"]
+roots = ["Cargo.toml"]
+command = "ra_lsp_server"
+
+[language.go]
+filetypes = ["go"]
+roots = ["Gopkg.toml", "go.mod", "go.mod"]
+command = "gopls"
+offset_encoding = "utf-8"

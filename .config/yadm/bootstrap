@@ -24,6 +24,7 @@ cargo install cargo-edit cargo-fix
 read -r -d '' PACKAGES <<-'EOF'
 # CLI tools
 zsh
+kakoune
 ncdu
 sd 
 exa 
@@ -31,25 +32,17 @@ tokei
 fd 
 ripgrep 
 fzf 
-neovim 
 screenfetch
 jq
 
 # GUI apps
 jetbrains-toolbox 
 firefox 
-terminator 
+kitty
 keepassxc 
 mpv
 lollypop
-nomacs
 telegram-desktop
-
-# Development tools
-docker 
-docker-compose 
-jdk10-openjdk 
-jdk8-openjdk
 
 EOF
 

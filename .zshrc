@@ -33,6 +33,7 @@ compinit
 # Ctrl+R fuzzy finder
 source "/usr/share/fzf/completion.zsh"
 source "/usr/share/fzf/key-bindings.zsh"
+kitty + complete setup zsh | source /dev/stdin
 
 # Alias unix utils to alternatives
 alias mv="mv -i"
@@ -40,8 +41,8 @@ alias ls="exa -lah --git"
 alias cloc="tokei"
 alias find="fd"
 alias sed="sd"
-alias vim="nvim"
-alias cat="bat"
+alias vim="kak"
+alias nvim="kak"
 alias grep="rg"
 
 # Convenience commands

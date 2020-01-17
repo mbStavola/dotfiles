@@ -25,6 +25,8 @@ plug "alexherbo2/auto-pairs.kak" config %{
 
 plug "occivink/kakoune-sudo-write"
 
+plug "occivink/kakoune-gdb"
+
 plug "ul/kak-lsp" do %{
     cargo install --locked --force --path .
 } config %{
@@ -43,6 +45,8 @@ plug "ul/kak-lsp" do %{
         lsp-auto-signature-help-enable
     }
 }
+
+plug "https://gitlab.com/Screwtapello/kakoune-cargo"
 
 # Config
 

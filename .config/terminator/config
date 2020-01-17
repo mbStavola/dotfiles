@@ -1,5 +1,6 @@
 [global_config]
 [keybindings]
+  layout_launcher = None
 [layouts]
   [[default]]
     [[[child1]]]

@@ -1,4 +1,5 @@
 source /home/mbs/antigen.zsh
+source /home/mbs/.zprofile
 
 # Load the oh-my-zsh's library.
 antigen use oh-my-zsh

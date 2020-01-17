@@ -4,7 +4,11 @@ telemetry = false
 version = "12"
 
 [overrides]
+"/home/mbs/workspace/rust/alvin" = "nightly-x86_64-unknown-linux-gnu"
 "/home/mbs/workspace/rust/amethyst" = "stable-x86_64-unknown-linux-gnu"
 "/home/mbs/workspace/rust/bummer" = "nightly-x86_64-unknown-linux-gnu"
 "/home/mbs/workspace/rust/matroska" = "nightly-x86_64-unknown-linux-gnu"
+"/home/mbs/workspace/rust/simple-physics" = "nightly-x86_64-unknown-linux-gnu"
 "/home/mbs/workspace/rust/xi-editor" = "1.29.2-x86_64-unknown-linux-gnu"
+"/home/mbs/workspace/rust/xi-editor/rust" = "stable-x86_64-unknown-linux-gnu"
+"/home/mbs/workspace/rust/xi-editor/rust/tree-sitter-plugin" = "stable-x86_64-unknown-linux-gnu"

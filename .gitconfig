@@ -6,3 +6,6 @@
 [user]
 	email = mstavola9@gmail.com
 	name = Matt Stavola
+	signingkey = C28E1EDF448C32ED
+[commit]
+	gpgsign = true

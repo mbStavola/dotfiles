@@ -13,13 +13,24 @@ plug "alexherbo2/explore.kak" config %{
     alias global explore-files fzf-files
     alias global explore-buffers fzf-buffers
 }
+plug "alexherbo2/auto-pairs.kak" config %{
+    hook global WinSetOption filetype=(rust|go) %{
+        auto-pairs-enable
+    }
+
+    hook global WinSetOption filetype=rust %{
+        set-option buffer auto_pairs ( ) { } [ ] \" \" ` `
+    }
+}
 
 plug "occivink/kakoune-sudo-write"
 
 plug "ul/kak-lsp" do %{
     cargo install --locked --force --path .
 } config %{
-    set global lsp_cmd "kak-lsp -s %val{session} -vvv --log /tmp/kak-lsp.log"
+    # Debug LSP
+    #set global lsp_cmd "kak-lsp --config %val{config}/configs/kak-lsp/kak-lsp.toml -s %val{session} -vvv --log /tmp/kak-lsp.log"
+    set global lsp_cmd "kak-lsp --config %val{config}/configs/kak-lsp/kak-lsp.toml -s %val{session}"
 
     hook global WinSetOption filetype=(rust|go) %{
         lsp-enable-window
@@ -27,8 +38,7 @@ plug "ul/kak-lsp" do %{
 
     hook global WinSetOption filetype=rust %{
         set buffer formatcmd 'rustfmt'
-
-        set buffer auto_pairs ( ) { } [ ] \" \" ` `
+        hook window BufWritePre .* lsp-formatting-sync
 
         lsp-auto-signature-help-enable
     }

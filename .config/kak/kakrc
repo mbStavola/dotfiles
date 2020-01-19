@@ -12,7 +12,9 @@ plug "alexherbo2/connect.kak" config %{
 plug "alexherbo2/explore.kak" config %{
     alias global explore-files fzf-files
     alias global explore-buffers fzf-buffers
+    alias global f fzf-files
 }
+
 plug "alexherbo2/auto-pairs.kak" config %{
     hook global WinSetOption filetype=(rust|go) %{
         auto-pairs-enable
@@ -23,28 +25,54 @@ plug "alexherbo2/auto-pairs.kak" config %{
     }
 }
 
+plug "andreyorst/smarttab.kak" defer smarttab %{
+    set-option global softtabstop 4
+} config %{
+    hook global WinSetOption filetype=(rust|kak) expandtab
+}
+
 plug "occivink/kakoune-sudo-write"
 
-plug "occivink/kakoune-gdb"
+plug "occivink/kakoune-gdb" config %{
+    decl str gdb_program "rust-gdb"
 
-plug "ul/kak-lsp" do %{
-    cargo install --locked --force --path .
-} config %{
-    # Debug LSP
-    #set global lsp_cmd "kak-lsp --config %val{config}/configs/kak-lsp/kak-lsp.toml -s %val{session} -vvv --log /tmp/kak-lsp.log"
-    set global lsp_cmd "kak-lsp --config %val{config}/configs/kak-lsp/kak-lsp.toml -s %val{session}"
-
-    hook global WinSetOption filetype=(rust|go) %{
-        lsp-enable-window
+    hook global GlobalSetOption gdb_started=true %{
+        map global normal <F5>    ': gdb-toggle-breakpoint<ret>'
+        map global normal <F6>    ': gdb-print<ret>'
+        map global normal <F7>    ': gdb-next<ret>'
+        map global normal <F8>    ': gdb-step<ret>'
+        map global normal <F9>    ': gdb-continue<ret>'
+        map global normal <s-F12> ': gdb-finish<ret>'
     }
 
-    hook global WinSetOption filetype=rust %{
-        set buffer formatcmd 'rustfmt'
-        hook window BufWritePre .* lsp-formatting-sync
-
-        lsp-auto-signature-help-enable
+    hook global GlobalSetOption gdb_started=false %{
+        unmap global normal <F5>    ': gdb-toggle-breakpoint<ret>'
+        unmap global normal <F6>    ': gdb-print<ret>'
+        unmap global normal <F7>    ': gdb-next<ret>'
+        unmap global normal <F8>    ': gdb-step<ret>'
+        unmap global normal <F9>    ': gdb-continue<ret>'
+        unmap global normal <s-F12> ': gdb-finish<ret>'
     }
 }
+
+# plug "ul/kak-lsp" do %{
+#     cargo install --locked --force --path .
+# } config %{
+#     # Debug LSP
+#     set global lsp_cmd "kak-lsp --config %val{config}/configs/kak-lsp/kak-lsp.toml -s %val{session} -vvv --log /tmp/kak-lsp.log"
+#     #set global lsp_cmd "kak-lsp --config %val{config}/configs/kak-lsp/kak-lsp.toml -s %val{session}"
+
+#     hook global WinSetOption filetype=(rust|go) %{
+#         lsp-enable-window
+#     }
+
+#     hook global WinSetOption filetype=rust %{
+#         set buffer formatcmd 'rustfmt'
+#         hook window BufWritePre .* lsp-formatting-sync
+
+#         lsp-auto-signature-help-enable
+#     }
+# }
 
 plug "https://gitlab.com/Screwtapello/kakoune-cargo"
 
@@ -54,3 +82,22 @@ plug "https://gitlab.com/Screwtapello/kakoune-cargo"
 colorscheme dracula
 
 add-highlighter global/ number-lines
+
+## Editor Settings
+hook global InsertCompletionShow .* %{
+    try %{
+        execute-keys -draft 'h<a-K>\h<ret>'
+        map window insert <tab> <c-n>
+        map window insert <s-tab> <c-p>
+    }
+}
+
+hook global InsertCompletionHide .* %{
+    unmap window insert <tab> <c-n>
+    unmap window insert <s-tab> <c-p>
+}
+
+## Language Specifics
+hook global WinSetOption filetype=rust %{
+    set buffer formatcmd 'rustfmt'
+}

@@ -55,24 +55,22 @@ plug "occivink/kakoune-gdb" config %{
     }
 }
 
-# plug "ul/kak-lsp" do %{
-#     cargo install --locked --force --path .
-# } config %{
-#     # Debug LSP
-#     set global lsp_cmd "kak-lsp --config %val{config}/configs/kak-lsp/kak-lsp.toml -s %val{session} -vvv --log /tmp/kak-lsp.log"
-#     #set global lsp_cmd "kak-lsp --config %val{config}/configs/kak-lsp/kak-lsp.toml -s %val{session}"
-
-#     hook global WinSetOption filetype=(rust|go) %{
-#         lsp-enable-window
-#     }
-
-#     hook global WinSetOption filetype=rust %{
-#         set buffer formatcmd 'rustfmt'
-#         hook window BufWritePre .* lsp-formatting-sync
-
-#         lsp-auto-signature-help-enable
-#     }
-# }
+plug "ul/kak-lsp" do %{
+    cargo install --locked --force --path .
+} config %{
+    # Debug LSP
+    set global lsp_cmd "kak-lsp --config %val{config}/configs/kak-lsp/kak-lsp.toml -s %val{session} -vvv --log /tmp/kak-lsp.log"
+    #set global lsp_cmd "kak-lsp --config %val{config}/configs/kak-lsp/kak-lsp.toml -s %val{session}"
+    hook global WinSetOption filetype=(rust|go) %{
+        lsp-enable-window
+    }
+    hook global WinSetOption filetype=rust %{
+        set buffer formatcmd 'rustfmt'
+        hook window BufWritePre .* format
+        lsp-auto-hover-enable
+        lsp-auto-signature-help-enable
+    }
+}
 
 plug "https://gitlab.com/Screwtapello/kakoune-cargo"
 
@@ -97,7 +95,6 @@ hook global InsertCompletionHide .* %{
     unmap window insert <s-tab> <c-p>
 }
 
-## Language Specifics
-hook global WinSetOption filetype=rust %{
-    set buffer formatcmd 'rustfmt'
-}
+hook global NormalKey y|d|c %{ nop %sh{
+      printf %s "$kak_main_reg_dquote" | xsel --input --clipboard
+}}

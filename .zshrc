@@ -46,8 +46,7 @@ alias nvim="kak"
 alias grep="rg"
 
 # Convenience commands
-alias reload_env="zsh"
-alias memcache_clear="echo 'flush_all' | nc localhost 11211"
+alias calc="python3"
 function kill_port() {
 	PID=$(lsof -t -i tcp:$1);
 

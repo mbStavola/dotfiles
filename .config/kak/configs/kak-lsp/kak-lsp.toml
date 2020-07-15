@@ -14,8 +14,8 @@ timeout = 15
 [language.rust]
 filetypes = ["rust"]
 roots = ["Cargo.toml"]
-#command = "ra_lsp_server"
-command = "rls"
+command = "ra_lsp_server"
+#command = "rls"
 
 [language.go]
 filetypes = ["go"]

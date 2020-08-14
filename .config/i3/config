@@ -239,6 +239,11 @@ bindsym --release Ctrl+Print exec scrot -u '/home/mbs/Pictures/screenshots/%F_%T
 # Grab all screens, create file and copy into clipboard
 bindsym --release $mod+Print exec scrot -m '/home/mbs/Pictures/screenshots/%F_%T.png' -e 'xclip -selection clipboard -t image/png -i $f'
 
+# Quick switch monitors
+bindsym $mod+Mod1+1 exec ~/.screenlayout/laptop.sh
+bindsym $mod+Mod1+2 exec ~/.screenlayout/dock-lid-open.sh
+bindsym $mod+Mod1+3 exec ~/.screenlayout/homedesk.sh
+
 # Autostart apps
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id "compton -cC"

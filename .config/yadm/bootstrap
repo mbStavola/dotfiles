@@ -35,6 +35,11 @@ fzf
 screenfetch
 jq
 
+# WM
+i3
+rofi
+rofi-dmenu
+
 # GUI apps
 jetbrains-toolbox 
 firefox 

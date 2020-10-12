@@ -1,9 +1,13 @@
 python                                                                                                                                                                                                                                                         
 import sys  
 
-sys.path.insert(0, '/home/mbs/workspace/rust/src/etc/')
+gdb.execute("set disassembly-flavor intel")
 
-import gdb_rust_pretty_printing                                                                                                                                                                                                                                
+sys.path.insert(0, '/home/mbs/workspace/rust/rust/src/etc/')
 
-gdb_rust_pretty_printing.register_printers(gdb)                                                                                                                                                                                                                
+try:
+  import gdb_load_rust_pretty_printers
+except:
+  pass
+
 end  

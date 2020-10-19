@@ -39,6 +39,7 @@ jq
 i3
 rofi
 rofi-dmenu
+polybar
 
 # GUI apps
 jetbrains-toolbox 

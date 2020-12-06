@@ -1,5 +1,6 @@
 source /home/mbs/antigen.zsh
 source /home/mbs/.zprofile
+source /usr/share/nvm/init-nvm.sh
 
 # Load the oh-my-zsh's library.
 antigen use oh-my-zsh
@@ -47,17 +48,6 @@ alias grep="rg"
 
 # Convenience commands
 alias calc="python3"
-function kill_port() {
-	PID=$(lsof -t -i tcp:$1);
-
-	if [ -z "$PID" ]; then
-		echo "Port '$1' is not bound to a process";
-		return;
-	fi
-
-	echo "Killing process '$PID'";
-	kill $PID;
-}
 
 if [[ -n $SSH_CONNECTION ]]; then
 	export EDITOR='vim'

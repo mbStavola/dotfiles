@@ -1,4 +1,4 @@
 eval $(ssh-agent -s) > /dev/null
 ssh-add /home/mbs/.ssh/github_id_rsa > /dev/null
-export DENO_INSTALL="/home/mbs/.deno"
-export PATH="$DENO_INSTALL/bin:$HOME/.cargo/bin:$HOME/go/bin:$HOME/.gem/ruby/2.6.0/bin:$PATH"
+
+export PATH="$HOME/.deno/bin:$HOME/.cargo/bin:$HOME/go/bin:$HOME/.gem/ruby/2.6.0/bin:$HOME/.scripts/:$PATH"

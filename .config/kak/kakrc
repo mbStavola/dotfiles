@@ -1,6 +1,6 @@
 # Plugins
 source "%val{config}/plugins/plug.kak/rc/plug.kak"
-plug "andreyorst/plug.kak" noload config %{
+plug "robertmeta/plug.kak" noload config %{
    set-option global plug_always_ensure true
 }
 
@@ -9,7 +9,10 @@ plug "alexherbo2/kakoune-dracula-theme" theme
 plug "alexherbo2/connect.kak" config %{
     require-module connect-fzf
 }
+
 plug "alexherbo2/explore.kak" config %{
+    explore-enable
+
     alias global explore-files fzf-files
     alias global explore-buffers fzf-buffers
     alias global f fzf-files
@@ -70,6 +73,11 @@ plug "ul/kak-lsp" do %{
         lsp-auto-hover-enable
         lsp-auto-signature-help-enable
     }
+}
+
+hook global WinSetOption filetype=(javascript|typescript|yaml|markdown|css|html|json) %{
+    set buffer formatcmd 'prettier'
+    hook window BufWritePre .* format
 }
 
 plug "https://gitlab.com/Screwtapello/kakoune-cargo"

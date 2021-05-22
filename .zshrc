@@ -1,5 +1,4 @@
 source /home/mbs/antigen.zsh
-source /home/mbs/.zprofile
 source /usr/share/nvm/init-nvm.sh
 
 # export ANTIGEN_LOG=/home/mbs/Downloads/antigen.log
@@ -37,8 +36,6 @@ compinit
 source "/usr/share/fzf/completion.zsh"
 source "/usr/share/fzf/key-bindings.zsh"
 kitty + complete setup zsh | source /dev/stdin
-
-source /home/mbs/workspace/fuchsia/scripts/fx-env.sh
 
 # Alias unix utils to alternatives
 alias mv="mv -i"

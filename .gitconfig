@@ -4,10 +4,22 @@
 [push]
 	default = simple
 [user]
-	email = mstavola9@gmail.com
+	email = m.freitas@offensive-security.com
 	name = Matt Stavola
-	signingkey = C28E1EDF448C32ED
+	signingkey = AF601CAE5109540745FA82C70E9BE8C7F1CFF48C
 [commit]
 	gpgsign = true
-[init]
-	defaultBranch = main
+[gpg]
+	program = gpg
+[merge]
+	conflictstyle = diff3
+[diff]
+        tool = difftastic
+[difftool]
+        prompt = false
+[difftool "difftastic"]
+        cmd = difft "$LOCAL" "$REMOTE"
+[pager]
+        difftool = true
+[alias]
+        dft = difftool
